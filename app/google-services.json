@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "59118018920",
+    "project_id": "schoolproject-14bb3",
+    "storage_bucket": "schoolproject-14bb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59118018920:android:524179e0679d6bc02f76dd",
+        "android_client_info": {
+          "package_name": "com.example.biologin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59118018920-bhi4ko8s90gmhm2hps5uh7h33sp6k973.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE_JvysUo49aHGSMRdBGBLIRY_8I4WrE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59118018920-bhi4ko8s90gmhm2hps5uh7h33sp6k973.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

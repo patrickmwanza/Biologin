@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F305E"
+    android:theme="@style/Theme.new"
+    tools:context=".location">
+
+    <ImageView
+        android:id="@+id/image"
+        android:textSize="12sp"
+        android:layout_width="99dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/baseline_wrong_location_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="App will load when you report for work"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#FFEB3B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+
+        android:text="YOUR WORK LOCATION"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/reqlatlabel"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Required longitude:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <TextView
+        android:id="@+id/reqlonglabel"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Required latitude:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqlatlabel" />
+
+
+    <TextView
+        android:id="@+id/Latitudetolerancelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="LongTolerance:"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqlonglabel" />
+
+    <TextView
+        android:id="@+id/reqlat"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="23.3456789"
+        android:textSize="12sp"
+
+        app:layout_constraintStart_toEndOf="@+id/reqlatlabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/reqlong"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="-15.0987654"
+
+        app:layout_constraintStart_toEndOf="@+id/reqlonglabel"
+        app:layout_constraintTop_toBottomOf="@+id/reqlat" />
+
+    <TextView
+        android:id="@+id/lattol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="-15.0987654"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/Longtolerancelabel"
+        app:layout_constraintTop_toBottomOf="@+id/currentlog" />
+
+    <TextView
+        android:id="@+id/longtol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="-15.0987654"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/Latitudetolerancelabel"
+        app:layout_constraintTop_toBottomOf="@+id/reqlong" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#FFEB3B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CURRENT LOCATION"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/clatlabel"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:text="Your latitude:"
+        app:layout_constraintStart_toEndOf="@+id/reqlat"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/currentlat"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:text="15.0935432"
+        android:textSize="12sp"
+
+        app:layout_constraintStart_toEndOf="@+id/clatlabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/clonglabel"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Your longitude:"
+        app:layout_constraintStart_toEndOf="@+id/reqlong"
+        app:layout_constraintTop_toBottomOf="@+id/clatlabel" />
+
+    <TextView
+        android:id="@+id/Longtolerancelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="LatTolerance: "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/longtol"
+        app:layout_constraintTop_toBottomOf="@+id/clonglabel" />
+
+    <TextView
+        android:id="@+id/currentlog"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:text="28.09876543"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/clonglabel"
+        app:layout_constraintTop_toBottomOf="@+id/currentlat" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

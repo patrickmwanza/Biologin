@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/logutid"
+        android:title="logout"
+        android:icon="@drawable/baseline_logout_24"
+        />
+    <item
+        android:id="@+id/settingsid"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"
+      />
+
+    <item
+        android:id="@+id/send"
+        android:title="Send My Data"
+        android:icon="@drawable/baseline_attach_email_24"
+        />
+</menu>
